@@ -56,8 +56,10 @@
 <text style="text-anchor:end;" font-size="80px" y="210" x="490">CURRENT</text>
 <text style="text-anchor:middle;" font-size="80px" y="210" x="550">°C</text>
 <text style="text-anchor:middle;" font-size="35px" y="275" x="450">Tag:</text>
-<text style="text-anchor:end;" font-size="50px" y="330" x="500">DAY</text>
-<text style="text-anchor:middle;" font-size="50px" y="330" x="550">°C</text>
+<text style="text-anchor:end;" font-size="50px" y="330" x="490">DAY</text>
+<text style="text-anchor:middle;" font-size="50px" y="330" x="555">°C</text>
+
+<text style="text-anchor:start;" font-size="20px" y="450" x="0">U2_RUHLEBEN</text>
 
 <!-- <text style="text-anchor:middle;" font-size="32px" y="465.16922" x="102.92969">Tomorrow:</text>
 <text style="text-anchor:middle;" font-size="20px" y="635.68347" x="74.958336">High:</text>
