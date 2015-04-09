@@ -37,7 +37,7 @@
 </defs>
 
 <g transform="scale(3.25) translate(5.055 20.166)">
-<use xlink:href="#10n"/>
+<use xlink:href="#02d"/>
 </g>
 
 <!-- <g transform="scale(1.2) translate(34.167 399.725)">
@@ -53,24 +53,38 @@
 <g font-family="DejaVu Sans">
 <!-- <text style="text-anchor:middle;" font-size="35px" y="52.256058" x="76.039063">Wetter:</text> -->
 <text style="text-anchor:middle;" font-size="35px" y="120" x="450">Aktuell:</text>
-<text style="text-anchor:end;" font-size="80px" y="210" x="490">9</text>
+<text style="text-anchor:end;" font-size="80px" y="210" x="490">14</text>
 <text style="text-anchor:middle;" font-size="80px" y="210" x="550">°C</text>
 <text style="text-anchor:middle;" font-size="35px" y="275" x="450">Tag:</text>
-<text style="text-anchor:end;" font-size="50px" y="330" x="490">7/9</text>
+<text style="text-anchor:end;" font-size="50px" y="330" x="490">7 / 15</text>
 <text style="text-anchor:middle;" font-size="50px" y="330" x="555">°C</text>
 
-<text style="text-anchor:start;" font-size="20px" y="450" x="0"><tspan x="10" dy="1em">Bismarckstr.</tspan>
-<tspan x="10" dy="1em">U2 U Olympia-Stadion (Berlin) in 14 Min.</tspan>
-<tspan x="10" dy="1em">U2 U Theodor-Heuss-Platz (Berlin) in 24 Min.</tspan>
-<tspan x="10" dy="1em"> </tspan>
-<tspan x="10" dy="1em">U7 S+U Rathaus Spandau (Berlin) in 12 Min.</tspan>
-<tspan x="10" dy="1em"> </tspan>
-<tspan x="10" dy="1em">Bus   U2 Ersatz Richtung Pankow in 12 Min.</tspan>
-<tspan x="10" dy="1em">Bus   N7 Flughafen Schönefeld Airport in 15 Min.</tspan>
-<tspan x="10" dy="1em">Bus   N2 S+U Pankow via Hackescher Markt in 16 Min.</tspan>
-<tspan x="10" dy="1em">Bus   U2 Ersatz Richtung Pankow in 22 Min.</tspan>
-<tspan x="10" dy="1em">Bus   N7 S+U Rathaus Spandau in 35 Min.</tspan>
-<tspan x="10" dy="1em"> </tspan>
+<text style="text-anchor:start;" font-size="15px" y="400" x="100"><tspan x="150" dy="1em">Bismarckstr.</tspan>
+<tspan x="150" dy="1em"> </tspan>
+<tspan x="150" dy="1em">U2 U Theodor-Heuss-Platz (Berlin) in 9 Min.</tspan>
+<tspan x="150" dy="1em">U2 U Olympia-Stadion (Berlin) in 14 Min.</tspan>
+<tspan x="150" dy="1em">U2 U Theodor-Heuss-Platz (Berlin) in 19 Min.</tspan>
+<tspan x="150" dy="1em"> </tspan>
+<tspan x="150" dy="1em">U7 U Rudow (Berlin) in 7 Min.</tspan>
+<tspan x="150" dy="1em">U7 U Rudow (Berlin) in 12 Min.</tspan>
+<tspan x="150" dy="1em">U7 U Rudow (Berlin) in 17 Min.</tspan>
+<tspan x="150" dy="1em"> </tspan>
+<tspan x="150" dy="1em">U7 S+U Rathaus Spandau (Berlin) in 8 Min.</tspan>
+<tspan x="150" dy="1em">U7 S+U Rathaus Spandau (Berlin) in 13 Min.</tspan>
+<tspan x="150" dy="1em">U7 S+U Rathaus Spandau (Berlin) in 18 Min.</tspan>
+<tspan x="150" dy="1em"> </tspan>
+<tspan x="150" dy="1em">Bus   U2 Ersatz Richtung Pankow in 7 Min.</tspan>
+<tspan x="150" dy="1em">Bus   U2 Ersatz Richtung Pankow in 9 Min.</tspan>
+<tspan x="150" dy="1em">Bus   U2 Ersatz Richtung Pankow in 12 Min.</tspan>
+<tspan x="150" dy="1em"> </tspan>
+<tspan x="150" dy="1em">Haubachstr.</tspan>
+<tspan x="150" dy="1em"> </tspan>
+<tspan x="150" dy="1em">Bus  109 Flughafen Tegel Airport in 10 Min.</tspan>
+<tspan x="150" dy="1em">Bus  109 Flughafen Tegel Airport in 20 Min.</tspan>
+<tspan x="150" dy="1em"> </tspan>
+<tspan x="150" dy="1em">Bus  109 S+U Zoologischer Garten in 10 Min.</tspan>
+<tspan x="150" dy="1em">Bus  109 S+U Zoologischer Garten in 20 Min.</tspan>
+<tspan x="150" dy="1em"> </tspan>
 </text>
 
 <!-- <text style="text-anchor:middle;" font-size="32px" y="465.16922" x="102.92969">Tomorrow:</text>
@@ -81,7 +95,7 @@
 <text style="text-anchor:end;" font-size="58px" y="773.51617" x="116.00232">LOW_TWO</text>
 <text style="text-anchor:middle;" font-size="37px" y="758.05206" x="134.01663">°F</text>
 
-<text style="text-anchor:middle;" font-size="32px" y="466.15359" x="300.3125">7/9_THREE:</text>
+<text style="text-anchor:middle;" font-size="32px" y="466.15359" x="300.3125">7 / 15_THREE:</text>
 <text style="text-anchor:middle;" font-size="20px" y="635.68347" x="273.95834">High:</text>
 <text style="text-anchor:end;" font-size="58px" y="686.3255" x="314.15454">HIGH_THREE</text>
 <text style="text-anchor:middle;" font-size="37px" y="670.86145" x="333.01663">°F</text>
@@ -89,7 +103,7 @@
 <text style="text-anchor:end;" font-size="58px" y="773.51617" x="314.08383">LOW_THREE</text>
 <text style="text-anchor:middle;" font-size="37px" y="758.05206" x="333.0166">°F</text>
 
-<text style="text-anchor:middle;" font-size="32px" y="466.15359" x="499.82813">7/9_FOUR:</text>
+<text style="text-anchor:middle;" font-size="32px" y="466.15359" x="499.82813">7 / 15_FOUR:</text>
 <text style="text-anchor:middle;" font-size="20px" y="635.68347" x="472.95834">High:</text>
 <text style="text-anchor:end;" font-size="58px" y="686.3255" x="513.30994">HIGH_FOUR</text>
 <text style="text-anchor:middle;" font-size="37px" y="670.86145" x="532.0166">°F</text>

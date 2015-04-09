@@ -43,15 +43,15 @@ def getDeparturesExcludedByLine(departures, lines, min_time, max_time, max_list_
 def getTable(departures):
     table = ""
     for item in departures:
-        table += "<tspan x=\"10\" dy=\"1em\">" + item.str() + "</tspan>\n"
+        table += "<tspan x=\"150\" dy=\"1em\">" + item.str() + "</tspan>\n"
     return table
 
 def buildDepartureTable(departures, name):
-    table = "<tspan x=\"10\" dy=\"1em\">" + name + "</tspan>\n"
+    table = "<tspan x=\"150\" dy=\"1em\">" + name + "</tspan>\n" + "<tspan x=\"150\" dy=\"1em\"> </tspan>\n"
     for item in departures:
         if len(item) > 0:
             table += getTable(item)
-            table += "<tspan x=\"10\" dy=\"1em\"> </tspan>\n"
+            table += "<tspan x=\"150\" dy=\"1em\"> </tspan>\n"
     return table
 
 # using the openweathermap api
@@ -86,20 +86,26 @@ sub_departures = []
 for item in traffic_sub[0][1]:
     sub_departures.append(Departure(item['line'], item['end'], item['remaining']))
 
-u7_rudow_departures = getDepartures(sub_departures, "U7", "U Rudow (Berlin)", 5, 60, 5)
-u7_rath_spandau_departures = getDepartures(sub_departures, "U7", "S+U Rathaus Spandau (Berlin)", 5, 60, 5)
+u7_rudow_departures = getDepartures(sub_departures, "U7", "U Rudow (Berlin)", 5, 60, 3)
+u7_rath_spandau_departures = getDepartures(sub_departures, "U7", "S+U Rathaus Spandau (Berlin)", 5, 60, 3)
 
-u2_pankow_departures = getDepartures(sub_departures, "U2", "U Pankow (Berlin)", 5, 60, 5)
-u2_ruhleben_departures = getDepartures(sub_departures, "U2", ["U Ruhleben(Berlin)", "U Olympia-Stadion (Berlin)", "U Theodor-Heuss-Platz (Berlin)"], 5, 60, 5)
+u2_pankow_departures = getDepartures(sub_departures, "U2", "U Pankow (Berlin)", 5, 60, 3)
+u2_ruhleben_departures = getDepartures(sub_departures, "U2", ["U Ruhleben(Berlin)", "U Olympia-Stadion (Berlin)", "U Theodor-Heuss-Platz (Berlin)"], 5, 60, 3)
 
-bus_bismarck_departures = getDeparturesExcludedByLine(sub_departures, ["U2", "U7"], 5, 60, 5)
-
-print(getTable(u7_rath_spandau_departures))
+bus_bismarck_departures = getDeparturesExcludedByLine(sub_departures, ["U2", "U7"], 5, 60, 3)
 
 station_bus_id = "B%20Haubachstr.%20(Berlin)"
 traffic_bus_api_url = "https://bvg-grabber-api.herokuapp.com/actual?station=" + station_bus_id
 
 traffic_bus = getJSON(traffic_bus_api_url)
+bus_departures = []
+
+for item in traffic_bus[0][1]:
+    bus_departures.append(Departure(item['line'], item['end'], item['remaining']))
+
+tegel_departures = getDepartures(bus_departures,"Bus  109", "Flughafen Tegel Airport", 3, 60, 2);
+zoo_departures = getDepartures(bus_departures,"Bus  109", "S+U Zoologischer Garten", 3, 60, 2);
+bus_others = getDeparturesExcludedByLine(bus_departures,"Bus  109", 3, 60, 2)
 
 # print("Bus Traffic:\n")
 # pprint(traffic_bus)
@@ -107,14 +113,17 @@ traffic_bus = getJSON(traffic_bus_api_url)
 # for item in traffic_bus[0][1]:
     # print(item['line'] + " " + item['end'] + " in " + str(item['remaining'] / 60) + " Min.")
 
+table_sub = buildDepartureTable([u2_pankow_departures, u2_ruhleben_departures, u7_rudow_departures, u7_rath_spandau_departures, bus_bismarck_departures], 'Bismarckstr.')
+table_bus = buildDepartureTable([tegel_departures, zoo_departures, bus_others], 'Haubachstr.')
 
+# print(table_bus)
 
 output = codecs.open('weather-script-preprocess.svg', 'r', encoding='utf-8').read()
 output = output.replace('ICON_ONE', icon)
 output = output.replace('CURRENT', str(current_temp))
-output = output.replace('DAY', str(min_temp) + "/" + str(max_temp))
+output = output.replace('DAY', str(min_temp) + " / " + str(max_temp))
 
-output = output.replace('U2_RUHLEBEN', buildDepartureTable([u2_pankow_departures, u2_ruhleben_departures, u7_rudow_departures, u7_rath_spandau_departures, bus_bismarck_departures], 'Bismarckstr.'))
+output = output.replace('DEPARTURES', table_sub + table_bus)
 
 codecs.open('weather-script-output.svg', 'w', encoding='utf-8').write(output)
 
