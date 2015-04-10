@@ -59,7 +59,7 @@
 <text style="text-anchor:end;" font-size="50px" y="230" x="490">DAY</text>
 <text style="text-anchor:middle;" font-size="50px" y="230" x="555">°C</text>
 
-<text style="text-anchor:start;" font-size="15px" y="350" x="100">DEPARTURES</text>
+<text style="text-anchor:start;" font-size="17px" y="350" x="100">DEPARTURES</text>
 
 <!-- <text style="text-anchor:middle;" font-size="32px" y="465.16922" x="102.92969">Tomorrow:</text>
 <text style="text-anchor:middle;" font-size="20px" y="635.68347" x="74.958336">High:</text>

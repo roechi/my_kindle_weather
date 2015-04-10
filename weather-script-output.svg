@@ -37,7 +37,7 @@
 </defs>
 
 <g transform="scale(3.25) translate(3 2)">
-<use xlink:href="#02d"/>
+<use xlink:href="#01n"/>
 </g>
 
 <!-- <g transform="scale(1.2) translate(34.167 399.725)">
@@ -53,37 +53,26 @@
 <g font-family="DejaVu Sans">
 <!-- <text style="text-anchor:middle;" font-size="35px" y="52.256058" x="76.039063">Wetter:</text> -->
 <text style="text-anchor:middle;" font-size="35px" y="40" x="450">Aktuell:</text>
-<text style="text-anchor:end;" font-size="80px" y="110" x="490">14</text>
+<text style="text-anchor:end;" font-size="80px" y="110" x="490">8</text>
 <text style="text-anchor:middle;" font-size="80px" y="110" x="550">°C</text>
 <text style="text-anchor:middle;" font-size="35px" y="175" x="450">Tag:</text>
-<text style="text-anchor:end;" font-size="50px" y="230" x="490">7 / 15</text>
+<text style="text-anchor:end;" font-size="50px" y="230" x="490">6 / 8</text>
 <text style="text-anchor:middle;" font-size="50px" y="230" x="555">°C</text>
 
-<text style="text-anchor:start;" font-size="15px" y="350" x="100"><tspan x="150" dy="1em">Bismarckstr.</tspan>
+<text style="text-anchor:start;" font-size="17px" y="350" x="100"><tspan x="150" dy="1em">Bismarckstr.</tspan>
 <tspan x="150" dy="1em"> </tspan>
-<tspan x="150" dy="1em">U2 U Olympia-Stadion (Berlin) in 7 Min.</tspan>
-<tspan x="150" dy="1em">U2 U Theodor-Heuss-Platz (Berlin) in 12 Min.</tspan>
-<tspan x="150" dy="1em">U2 U Olympia-Stadion (Berlin) in 17 Min.</tspan>
+<tspan x="150" dy="1em">U2 U Olympia-Stadion (Berlin) in 12 Min.</tspan>
+<tspan x="150" dy="1em">U2 U Olympia-Stadion (Berlin) in 22 Min.</tspan>
+<tspan x="150" dy="1em">U2 U Olympia-Stadion (Berlin) in 32 Min.</tspan>
 <tspan x="150" dy="1em"> </tspan>
-<tspan x="150" dy="1em">U7 U Rudow (Berlin) in 5 Min.</tspan>
-<tspan x="150" dy="1em">U7 U Rudow (Berlin) in 10 Min.</tspan>
-<tspan x="150" dy="1em">U7 U Rudow (Berlin) in 15 Min.</tspan>
+<tspan x="150" dy="1em">U7 S+U Rathaus Spandau (Berlin) in 12 Min.</tspan>
+<tspan x="150" dy="1em">U7 S+U Rathaus Spandau (Berlin) in 30 Min.</tspan>
 <tspan x="150" dy="1em"> </tspan>
-<tspan x="150" dy="1em">U7 S+U Rathaus Spandau (Berlin) in 6 Min.</tspan>
-<tspan x="150" dy="1em">U7 S+U Rathaus Spandau (Berlin) in 11 Min.</tspan>
-<tspan x="150" dy="1em">U7 S+U Rathaus Spandau (Berlin) in 16 Min.</tspan>
-<tspan x="150" dy="1em"> </tspan>
-<tspan x="150" dy="1em">Bus   U2 Ersatz Richtung Pankow in 5 Min.</tspan>
-<tspan x="150" dy="1em">Bus   U2 Ersatz Richtung Pankow in 7 Min.</tspan>
 <tspan x="150" dy="1em">Bus   U2 Ersatz Richtung Pankow in 10 Min.</tspan>
+<tspan x="150" dy="1em">Bus   U2 Ersatz Richtung Pankow in 20 Min.</tspan>
+<tspan x="150" dy="1em">Bus   U2 Ersatz Richtung Pankow in 30 Min.</tspan>
 <tspan x="150" dy="1em"> </tspan>
 <tspan x="150" dy="1em">Haubachstr.</tspan>
-<tspan x="150" dy="1em"> </tspan>
-<tspan x="150" dy="1em">Bus  109 Flughafen Tegel Airport in 4 Min.</tspan>
-<tspan x="150" dy="1em">Bus  109 Flughafen Tegel Airport in 14 Min.</tspan>
-<tspan x="150" dy="1em"> </tspan>
-<tspan x="150" dy="1em">Bus  109 S+U Zoologischer Garten in 4 Min.</tspan>
-<tspan x="150" dy="1em">Bus  109 S+U Zoologischer Garten in 14 Min.</tspan>
 <tspan x="150" dy="1em"> </tspan>
 </text>
 
@@ -95,7 +84,7 @@
 <text style="text-anchor:end;" font-size="58px" y="773.51617" x="116.00232">LOW_TWO</text>
 <text style="text-anchor:middle;" font-size="37px" y="758.05206" x="134.01663">°F</text>
 
-<text style="text-anchor:middle;" font-size="32px" y="466.15359" x="300.3125">7 / 15_THREE:</text>
+<text style="text-anchor:middle;" font-size="32px" y="466.15359" x="300.3125">6 / 8_THREE:</text>
 <text style="text-anchor:middle;" font-size="20px" y="635.68347" x="273.95834">High:</text>
 <text style="text-anchor:end;" font-size="58px" y="686.3255" x="314.15454">HIGH_THREE</text>
 <text style="text-anchor:middle;" font-size="37px" y="670.86145" x="333.01663">°F</text>
@@ -103,7 +92,7 @@
 <text style="text-anchor:end;" font-size="58px" y="773.51617" x="314.08383">LOW_THREE</text>
 <text style="text-anchor:middle;" font-size="37px" y="758.05206" x="333.0166">°F</text>
 
-<text style="text-anchor:middle;" font-size="32px" y="466.15359" x="499.82813">7 / 15_FOUR:</text>
+<text style="text-anchor:middle;" font-size="32px" y="466.15359" x="499.82813">6 / 8_FOUR:</text>
 <text style="text-anchor:middle;" font-size="20px" y="635.68347" x="472.95834">High:</text>
 <text style="text-anchor:end;" font-size="58px" y="686.3255" x="513.30994">HIGH_FOUR</text>
 <text style="text-anchor:middle;" font-size="37px" y="670.86145" x="532.0166">°F</text>
