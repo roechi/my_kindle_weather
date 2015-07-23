@@ -54,32 +54,32 @@ def buildDepartureTable(departures, name):
             table += "<tspan x=\"150\" dy=\"1em\"> </tspan>\n"
     return table
 
-# using the openweathermap api
-city_id = "2950159"; #Berlin
+class Station:
+    def __init__(self, )
+
+fp = open("config.json")
+config = json.load(fp)
+config = config["city_id"]
+city_id = config["city_id"]
+
 current_api_url = "http://api.openweathermap.org/data/2.5/weather?id=" + city_id;
 forecast_api_url = "http://api.openweathermap.org/data/2.5/forecast/daily?id=" + city_id;
 
 current_weather = getJSON(current_api_url)
-
 forecast_weather = getJSON(forecast_api_url)['list'][0]
-# print('current:\n')
-# pprint(current_weather)
-# print('forecast\n')
-# pprint(forecast_weather)
 
 current_temp = int(round(KelvToCels(current_weather['main']['temp']), 0))
 max_temp = int(round(KelvToCels(forecast_weather['temp']['max']), 0))
 min_temp = int(round(KelvToCels(forecast_weather['temp']['min']), 0))
 icon = forecast_weather['weather'][0]['icon']
 
+stations
+
 #using the BVG grabber api
 station_sub_id = "U%20Bismarckstr.%20(Berlin)"
 traffic_sub_api_url = "https://bvg-grabber-api.herokuapp.com/actual?station=" + station_sub_id
 
 traffic_sub = getJSON(traffic_sub_api_url)
-
-# print("Sub Traffic:\n")
-# pprint(traffic_sub)
 
 sub_departures = []
 
@@ -107,16 +107,8 @@ tegel_departures = getDepartures(bus_departures,"Bus  109", "Flughafen Tegel Air
 zoo_departures = getDepartures(bus_departures,"Bus  109", "S+U Zoologischer Garten", 3, 60, 2);
 bus_others = getDeparturesExcludedByLine(bus_departures,"Bus  109", 3, 60, 2)
 
-# print("Bus Traffic:\n")
-# pprint(traffic_bus)
-
-# for item in traffic_bus[0][1]:
-    # print(item['line'] + " " + item['end'] + " in " + str(item['remaining'] / 60) + " Min.")
-
 table_sub = buildDepartureTable([u2_pankow_departures, u2_ruhleben_departures, u7_rudow_departures, u7_rath_spandau_departures, bus_bismarck_departures], 'Bismarckstr.')
 table_bus = buildDepartureTable([tegel_departures, zoo_departures, bus_others], 'Haubachstr.')
-
-# print(table_bus)
 
 output = codecs.open('weather-script-preprocess.svg', 'r', encoding='utf-8').read()
 output = output.replace('ICON_ONE', icon)
